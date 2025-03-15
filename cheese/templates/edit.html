@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Edit User Data</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background: linear-gradient(135deg, #f7c00a, #ffdd44);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+        }
+
+        .form-container {
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 12px;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+            max-width: 400px;
+            width: 100%;
+            box-sizing: border-box;
+            text-align: center;
+        }
+
+        h2 {
+            margin-bottom: 20px;
+            color: #333;
+        }
+
+        input[type="text"] {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 15px;
+            border: 1px solid #ddd;
+            border-radius: 6px;
+            box-sizing: border-box;
+            font-size: 16px;
+        }
+
+        input[type="submit"] {
+            background-color: #f7c00a;
+            color: #fff;
+            border: none;
+            padding: 12px;
+            border-radius: 6px;
+            cursor: pointer;
+            font-size: 16px;
+            width: 100%;
+            transition: 0.3s;
+            font-weight: bold;
+        }
+
+        input[type="submit"]:hover {
+            background-color: #e6ae00;
+        }
+    </style>
+</head>
+<body>
+    <div class="form-container">
+        <h2>Edit User Information</h2>
+        <form action="../edcode/{{x.id}}">
+            <input type="text" name="fullname" value="{{x.fullname}}" placeholder="Full Name">
+            <input type="text" name="username" value="{{x.username}}" placeholder="Username">
+            <input type="text" name="email" value="{{x.email}}" placeholder="Email">
+            <input type="text" name="password" value="{{x.password}}" placeholder="Password">
+            <input type="submit" value="Update">
+        </form>
+    </div>
+</body>
+</html>

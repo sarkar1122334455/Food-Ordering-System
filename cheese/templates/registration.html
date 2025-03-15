@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registration Form</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background: linear-gradient(135deg, #f7c00a, #ffdd44);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+        }
+
+        .registration-form {
+            background-color: #fff;
+            padding: 25px;
+            border-radius: 12px;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+            max-width: 400px;
+            width: 100%;
+            box-sizing: border-box;
+            text-align: center;
+        }
+
+        .registration-form h1 {
+            margin-top: 0;
+            color: #333;
+            font-size: 24px;
+            font-weight: bold;
+        }
+
+        .registration-form p {
+            text-align: left;
+            font-weight: 600;
+            color: #555;
+        }
+
+        .registration-form input[type="text"],
+        .registration-form input[type="email"],
+        .registration-form input[type="password"] {
+            width: 100%;
+            padding: 12px;
+            margin-bottom: 15px;
+            border: 1px solid #ddd;
+            border-radius: 6px;
+            box-sizing: border-box;
+            font-size: 16px;
+            transition: 0.3s;
+        }
+
+        .registration-form input:focus {
+            border-color: #f7c00a;
+            outline: none;
+            box-shadow: 0 0 8px rgba(247, 192, 10, 0.5);
+        }
+
+        .registration-form button {
+            background-color: #ffb400;
+            color: #fff;
+            border: none;
+            padding: 12px;
+            border-radius: 6px;
+            cursor: pointer;
+            font-size: 16px;
+            width: 100%;
+            margin-bottom: 10px;
+            transition: 0.3s;
+            font-weight: bold;
+        }
+
+        .registration-form button:hover {
+            background-color: #e6a500;
+        }
+
+        .registration-form a {
+            color: #d48f00;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        .registration-form a:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+    <div class="registration-form">
+        <h1>Registration Form</h1>
+        <form action="reg">
+            <p>Full Name:</p>
+            <input type="text" name="fullname" placeholder="Full Name">
+            <p>User Name:</p>
+            <input type="text" name="username" placeholder="User Name">
+            <p>Email:</p>
+            <input type="email" name="email" placeholder="Email">
+            <p>Password:</p>
+            <input type="password" name="password" placeholder="Password">
+            <button type="submit">Register</button>
+            <br>
+            <a href="login">Already have an account? Login</a>
+        </form>
+    </div>
+</body>
+</html>
